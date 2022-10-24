@@ -1,0 +1,73 @@
+---
+import { Icon } from 'astro-icon';
+
+const items = [
+	{
+		title: 'Simulation',
+		description:
+			'Incentive models for grid participants using the Augmented Bonding Curve + Cyberphysical System constraints from operating DER.',
+		icon: 'flat-color-icons:home',
+	},
+	{
+		title: 'Hybrid IBC',
+		description:
+			'A way for private instances of Plurigrid protocol to operate infrastructure for its faithful implementation, as well as the relayer pattern for connecting to the public IBC.',
+		icon: 'flat-color-icons:faq',
+	},
+	{
+		title: 'Coordination Commons',
+		description:
+			'To allow constituencies served by the electric grid under protocol to express their intent and ensure the valid decision making process, prevent fraud, and ensure overall incentive alignment using the Commons Stack and other instruments.',
+		icon: 'flat-color-icons:video-projector',
+	},
+	{
+		title: 'Whitelabel Microgrid app platform',
+		description:
+			'Integration between CosmWasm contracts and the mobile UI that each Microgrid will be able to customize to their own liking and ship resultings apps for multiple platforms, to be used by the participants in the microgrid.',
+		icon: 'flat-color-icons:video-projector',
+	},
+	{
+		title: 'Open Hardware and Infrastructure',
+		description:
+			'In operating Hybrid IBC, as well as distributed consumer devices like chargers, we will share our designs for power-efficient, secure, and resilient infrastructure to be used as templates.',
+		icon: 'flat-color-icons:calculator',
+	},
+	{
+		title: 'Power-Ups',
+		description:
+			'Research initiatives that allow us to fundamentally allow for new modes of coordination on a macro and micro level, e.g. Open Games Engine and Multi-Party Computation',
+		icon: 'flat-color-icons:voice-presentation',
+	},
+];
+---
+
+<section class="relative">
+	<div class="absolute inset-0 bg-primary-50 dark:bg-slate-800 pointer-events-none mb-32" aria-hidden="true"></div>
+	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
+			<div class="mb-8 text-center">
+				<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Public Goods</p>
+				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					We are building for You
+				</h2>
+				<p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
+					What does it take to build a reliable and resilient electric grid? We are building the tools to make it happen.
+				</p>
+			</div>
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start my-12 dark:text-white">
+				{
+					items.map(({ title, description, icon }) => (
+						<div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<Icon name={icon} class="w-12 h-12" />
+
+								<div class="ml-4 text-xl font-bold">{title}</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">{description}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>

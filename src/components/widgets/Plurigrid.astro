@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon';
+import Picture from '~/components/core/Picture.astro';
+---
+
+<section>
+	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-12 md:py-20">
+			<div class="text-center pb-10 md:pb-16">
+				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">Public Goods</span> +
+					<span
+						class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 sm:whitespace-nowrap"
+						>Microgrids</span
+					><br>
+					Pluralistic alternative to central grid planning <br>
+				</h1>
+				<div class="max-w-3xl mx-auto">
+					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
+						Plurigrid expands electricity resource capacity and scientific planning for electrical resources feasible in the real world through a protocol for better games in energy markets and incentive engineering infrastructure, <span class="inline sm:hidden">...</span><span
+							class="hidden sm:inline"
+							>Type I Civilization! <br><br> Join the e-gen movement! 💡</span
+						>
+					</p>
+					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
+								href="https://showtime.xyz/t/polygon/0x548776B80EAf63649573B3e1Fb171066F64C9518/0"
+								target="_blank"
+								rel="noopener"
+							>
+								Schedule a demo
+							</a>
+						</div>
+						<div class="flex w-full sm:w-auto">
+							<a
+								class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full"
+								href="https://app.orbis.club/group/kjzl6cwe1jw148c9irxqpur8nkhhnsji3ljyk1t8d0lrvnjbnaiqqw2w3iijusn"
+								target="_blank"
+								rel="noopener"
+								>
+								Become an e-gen
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="relative mb-8 m-auto max-w-3xl">
+					<Picture
+						src={import('~/assets/images/diagram.jpeg')}
+						class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
+						widths={[400, 768]}
+						sizes=" (max-width: 767px) 400px, 768px"
+						alt="Hero Image"
+						aspectRatio="16:9"
+					/>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
